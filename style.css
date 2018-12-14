@@ -32,13 +32,29 @@ body, html {
     width: 200px;
     height: 100%;
     background-color:#4aaaa5;
-    color: white;
     text-align: center;
+    color:white;
     font-size: 25px;
     float: left;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
+    -webkit-animation-name: colors; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: colors;
+    animation-duration: 4s;
   }
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes colors {
+  from {color: #4aaaa5;;}
+  to {color: white;}
+}
+
+/* Standard syntax */
+@keyframes colors {
+  from {color: #4aaaa5;;}
+  to {color: white;}
+}
 
   .name h1 {
     padding-top: 15px;
@@ -103,8 +119,23 @@ body, html {
     margin-bottom: 20px;
     padding-bottom: 25px;
     border-bottom: 2px solid #cccccc;
+    -webkit-animation-name: colors; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: colors2;
+    animation-duration: 4s;
   }
 
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes colors2 {
+  from {color: white;;}
+  to {color: #4aaaa5;}
+}
+
+/* Standard syntax */
+@keyframes colors2 {
+  from {color: white;;}
+  to {color: #4aaaa5;}
+}
   .main-container img {
     width: 150px;
     float: left;
@@ -133,6 +164,27 @@ body, html {
     margin-bottom: 20px;
     padding-bottom: 25px;
     border-bottom: 2px solid #cccccc;
+    -webkit-animation-name: colors; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: colors2;
+    animation-duration: 4s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes colors2 {
+  from {color: white;;}
+  to {color: #4aaaa5;}
+}
+
+/* Standard syntax */
+@keyframes colors2 {
+  from {color: white;;}
+  to {color: #4aaaa5;}
+}
+  .main-container img {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
   }
 
   .picbox {
